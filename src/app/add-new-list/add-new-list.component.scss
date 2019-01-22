@@ -1,0 +1,31 @@
+@import '../../variables.scss';
+
+header {
+  //height: $headerHeight;
+  //background: linear-gradient(to left, #444, #000);
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: auto;
+  height: 100px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(211, 211, 211, 0.75);
+}
+input {
+  all: unset;
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.s{
+  padding-left: 100px; 
+}

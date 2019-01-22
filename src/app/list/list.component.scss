@@ -1,0 +1,33 @@
+.list {
+  -webkit-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.75);
+  padding: 0.8em;
+  background: #ddd;
+  border-radius: 0.5em;
+  //border-color: black;
+  margin: 0.7em;
+  input {
+    all: unset;
+    border-bottom: 1px solid grey;
+    color: grey;
+    width: 100%;
+  }
+  i {
+    cursor: pointer;
+  }
+
+  .controls {
+    opacity: 0;
+    transition: opacity 400ms;
+    
+  }
+  &:hover .controls {
+    opacity: 1;
+  }
+  i {
+    cursor: pointer;
+  }
+}
+.list:hover{
+  transform: scale(1.1);
+    transition-duration: 700ms
+}

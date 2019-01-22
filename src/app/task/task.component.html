@@ -1,0 +1,11 @@
+<div class="task">
+  <h4>
+    <span [hidden]="editing" (dblclick)="edit()">{{ task.text }}</span>
+    <span [hidden]="!editing">
+      <input type="text" #editInput (keyup.enter)="editTask()" (blur)="cancelEdit()" [(ngModel)]="newTaskName">
+    </span>
+  </h4>
+  <div class="controls">
+    <i class="material-icons" (click)="deleteTask()">delete</i> <i (click)="edit()" class="material-icons">edit</i>
+  </div>
+</div>
