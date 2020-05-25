@@ -53,7 +53,7 @@ export class DataManagerService {
     return this.data;
   }
   addNewList(name: string) {
-    
+
     this.api.newList(name).then(res => {
       console.log(res);
       this.loadDataFromBackend();
@@ -66,33 +66,33 @@ export class DataManagerService {
     });
   }
 
-  addNewTask(idlist:number, task:string) {  
-    this.api.addTask(idlist, task).then(res =>{
+  addNewTask(idlist: number, task: string) {
+    this.api.addTask(idlist, task).then(res => {
       console.log(res);
       this.loadDataFromBackend();
     });
   }
-  deleteAllTasks(idlist:number) {
-    this.api.deleteAllTask(idlist).catch(res =>{
+  deleteATasks(idlist: number) {
+    this.api.deleteATask(idlist).catch(res => {
       console.log(res);
       this.loadDataFromBackend();
-      
+
     });
   }
 
-  editALists(idlist:number, name: string){
-    this.api.editList(idlist, name).catch(res =>{
+  editALists(idlist: number, name: string) {
+    this.api.editList(idlist, name).catch(res => {
       console.log(res);
       this.loadDataFromBackend();
-      
+
     });
   }
 
-editATasks(taskId: number, text:string){
-  this.api.editTask( taskId, text).then(res =>{
+editATasks(taskId: number, text: string) {
+  this.api.editTask( taskId, text).then(res => {
     console.log(res);
     this.loadDataFromBackend();
-  })
+  });
 }
 
 }

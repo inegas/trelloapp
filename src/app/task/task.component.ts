@@ -16,7 +16,8 @@ export class TaskComponent{
   constructor(private dataService: DataManagerService) {}
 
   deleteTask(){
-    this.dataService.deleteAllTasks(this.task.listId);
+    this.dataService.deleteATasks(this.task.taskId);
+    this.dataService.getData();
   }
 
   editTask(){
