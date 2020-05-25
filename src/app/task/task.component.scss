@@ -1,18 +1,27 @@
 .task {
-  background:white;
+  background:rgb(0, 0, 0);
   border-radius: 0.3em;
   padding: 0.3em;
   margin: 0.3em 0;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-}
-
-.controls {
-  opacity: 0;
-  transition: opacity 400ms;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
 }
 .task:hover .controls {
   opacity: 1;
 }
+input{
+  all: unset;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
 i {
+  size: 0em;
   cursor: pointer;
+  color: rgb(255, 255, 255);
+  float: right;
+  transform: scale(0.7);
+}
+
+i:hover{
+  transform: scale(1.2);
 }

@@ -1,33 +1,27 @@
 .list {
-  -webkit-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.75);
   padding: 0.8em;
-  background: #ddd;
+  background: rgb(0, 0, 0);
   border-radius: 0.5em;
   //border-color: black;
   margin: 0.7em;
   input {
     all: unset;
-    border-bottom: 1px solid grey;
-    color: grey;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     width: 100%;
   }
+  ::placeholder{
+    color: white;
+  }
   i {
+    float: right;
     cursor: pointer;
+    color: white;
   }
-
-  .controls {
-    opacity: 0;
-    transition: opacity 400ms;
-    
-  }
-  &:hover .controls {
+  i:hover {
     opacity: 1;
-  }
-  i {
-    cursor: pointer;
+    transform: scale(1.2);
   }
 }
-.list:hover{
-  transform: scale(1.1);
-    transition-duration: 700ms
-}
+
